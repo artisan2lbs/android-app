@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.umeng.fb.FeedbackAgent;
 import org.apache.http.message.BasicNameValuePair;
 
 import android.content.Context;
@@ -40,7 +39,6 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import cn.eoe.app.R;
 import cn.eoe.app.adapter.BasePageAdapter;
 import cn.eoe.app.biz.BaseDao;
@@ -62,6 +60,8 @@ import cn.eoe.app.ui.base.BaseSlidingFragmentActivity;
 import cn.eoe.app.utils.IntentUtil;
 import cn.eoe.app.utils.PopupWindowUtil;
 import cn.eoe.app.widget.CustomButton;
+
+import com.umeng.fb.FeedbackAgent;
 
 
 public class MainActivity extends BaseSlidingFragmentActivity implements

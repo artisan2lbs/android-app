@@ -6,7 +6,7 @@
     <uses-sdk
         android:minSdkVersion="5"
         android:targetSdkVersion="17" />
-
+	<!-- App需要的权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +15,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_LOGS" />
-    <!-- zxing -->
+    <!-- zxing Google提供的二维码生成和解析的工具类 -->
+    <!-- 很明显这里应该是使用摄像头扫面二维码登录功能需要的，我TM太机智了O(∩_∩)O哈哈~ -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />

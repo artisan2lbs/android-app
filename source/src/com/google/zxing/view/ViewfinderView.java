@@ -16,6 +16,9 @@
 
 package com.google.zxing.view;
 
+import java.util.Collection;
+import java.util.HashSet;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -25,14 +28,10 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
-
 import cn.eoe.app.R;
 
 import com.google.zxing.ResultPoint;
 import com.google.zxing.camera.CameraManager;
-
-import java.util.Collection;
-import java.util.HashSet;
 
 /**
  * This view is overlaid on top of the camera preview. It adds the viewfinder

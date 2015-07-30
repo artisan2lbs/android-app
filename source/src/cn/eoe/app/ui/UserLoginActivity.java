@@ -15,10 +15,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
 import cn.eoe.app.R;
 import cn.eoe.app.biz.UserDao;
-import cn.eoe.app.https.HttpUtils;
 import cn.eoe.app.https.NetWorkHelper;
 import cn.eoe.app.ui.base.BaseActivity;
 import cn.eoe.app.utils.IntentUtil;

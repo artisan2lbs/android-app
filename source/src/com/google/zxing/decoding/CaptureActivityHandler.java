@@ -16,6 +16,8 @@
 
 package com.google.zxing.decoding;
 
+import java.util.Vector;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -24,7 +26,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-
 import cn.eoe.app.R;
 
 import com.google.zxing.BarcodeFormat;
@@ -32,8 +33,6 @@ import com.google.zxing.CaptureActivity;
 import com.google.zxing.Result;
 import com.google.zxing.camera.CameraManager;
 import com.google.zxing.view.ViewfinderResultPointCallback;
-
-import java.util.Vector;
 
 /**
  * This class handles all the messaging which comprises the state machine for

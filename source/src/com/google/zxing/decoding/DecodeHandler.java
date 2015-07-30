@@ -16,12 +16,13 @@
 
 package com.google.zxing.decoding;
 
+import java.util.Hashtable;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
-
 import cn.eoe.app.R;
 
 import com.google.zxing.BinaryBitmap;
@@ -33,8 +34,6 @@ import com.google.zxing.Result;
 import com.google.zxing.camera.CameraManager;
 import com.google.zxing.camera.PlanarYUVLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
-
-import java.util.Hashtable;
 
 final class DecodeHandler extends Handler {
 
