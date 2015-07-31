@@ -63,7 +63,11 @@ import cn.eoe.app.widget.CustomButton;
 
 import com.umeng.fb.FeedbackAgent;
 
-
+/**
+ * 
+ * @author DistantSaviour
+ *
+ */
 public class MainActivity extends BaseSlidingFragmentActivity implements
         OnClickListener, AnimationListener {
     private final String LIST_TEXT = "text";

@@ -23,12 +23,15 @@
     
 	<uses-permission android:name="android.permission.VIBRATE" />
 	<uses-permission android:name="android.permission.FLASHLIGHT" />
-	
+	<!-- 啊哈！所有的activity都在这里呢？有种要饱餐一顿的节奏，嘿嘿。原谅我是个吃货O(∩_∩)O哈哈~ -->
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
+        <!-- 这个我就不吐槽了，(ˉ▽￣～) 切~~ -->
+        <!-- 面子工程没什么卵用！！！！！！！！ ps:你们的产品经理，在哪里，在哪里？-->
+        <!-- 在启动App的时候，显示eoe的logo没有别的功能。唉，严重影响使用app的心情 -->
         <activity
             android:name=".ui.SplashActivity"
             android:label="@string/app_name"
@@ -41,6 +44,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 来吧，下面就从主界面开始干（看）吧！    
+        （代码不是我写的，就是来看看eoe的代码学习下，顺便吐槽，有机会顺便做个免费劳工，要是您不介意赏几个大洋，我也不介意收下，嘿嘿，YY的有点儿过了，代码走起~）-->
+        
+        <!-- API level 11以上才有硬件加速一说，报黄线就报黄线吧！ -->
+        <!-- 主界面 -->
         <activity
             android:name=".ui.MainActivity"
             android:hardwareAccelerated="true"
@@ -48,6 +56,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
+        <!-- 详细信息页面 -->
         <activity
             android:name=".ui.DetailsActivity"
             android:hardwareAccelerated="false"
@@ -55,6 +64,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
+        <!-- 讨论详细信息页面 -->
         <activity
             android:name=".ui.DetailsDiscussActivity"
             android:hardwareAccelerated="false"
@@ -63,6 +73,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
+        <!-- 搜索页面 -->
         <activity
             android:name=".ui.SearchActivity"
             android:hardwareAccelerated="false"
@@ -71,20 +82,23 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateVisible" >
         </activity>
-        <activity
-            android:name=".ui.UserLoginActivity"
-            android:label="@string/app_name"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" >
-        </activity>
+        <!-- 用户中心 -->
         <activity
             android:name=".ui.UserCenterActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
+        <!-- 关于页面 -->
         <activity
             android:name=".ui.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 登陆相关 -->
+        <activity
+            android:name=".ui.UserLoginActivity"
+            android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
@@ -93,12 +107,14 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.umeng.fb.ConversationActivity"/>
-        <activity android:name="com.umeng.fb.ContactActivity"/>
 
-        <!-- zxing -->
+        <!-- zxing 二维码扫描解码 -->
         <activity android:name="com.google.zxing.CaptureActivity"
             android:screenOrientation="portrait"/>
+        
+        <!-- 友盟——不解释！！ -->
+        <activity android:name="com.umeng.fb.ConversationActivity"/>
+        <activity android:name="com.umeng.fb.ContactActivity"/>
         
         <meta-data
             android:name="UMENG_APPKEY"

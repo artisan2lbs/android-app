@@ -3,7 +3,16 @@ package cn.eoe.app.slidingmenu;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 
-
+/**
+ * 额滴神！！！！！
+ * 这个代码我猜绝对是在国外小伙伴哪里拿过来的，别问我为什么知道！！因为我就是知道，╭(╯^╰)╮。
+ * 因为注释全是英文的，关键是居然有注释，有注释，有注释！！！！！
+ * 
+ * 滑动Activity的接口，具体怎么用的还要仔细读读。（~~~~(>_<)~~~~英文不怎么好！）
+ * 
+ * @author DistantSaviour
+ *
+ */
 public interface SlidingActivityBase {
 	
 	/**

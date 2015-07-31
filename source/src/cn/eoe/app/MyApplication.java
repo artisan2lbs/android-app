@@ -16,7 +16,7 @@ import android.app.Application;
  */
 public class MyApplication extends Application {
 	//根据命名判断，应该是缓存目录吧，貌似，应该，也许，大概，Ｏ(≧口≦)Ｏ
-//	在这里分明就没有什么卵用啊！！！！
+    //在这里分明就没有什么卵用啊！！！！
 	public static File cacheDir;
 	@Override
 	public void onCreate() {
