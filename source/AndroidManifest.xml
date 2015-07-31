@@ -113,7 +113,7 @@
             android:screenOrientation="portrait"/>
         
         <!-- 友盟——不解释！！ -->
-        <activity android:name="com.umeng.fb.ConversationActivity"/>
+       <!--  <activity android:name="com.umeng.fb.ConversationActivity"/>
         <activity android:name="com.umeng.fb.ContactActivity"/>
         
         <meta-data
@@ -121,6 +121,6 @@
             android:value="510777d152701511ea000006" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="Default" />
+            android:value="Default" /> -->
     </application>
 </manifest>

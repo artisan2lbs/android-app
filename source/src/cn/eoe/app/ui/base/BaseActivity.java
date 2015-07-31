@@ -17,7 +17,7 @@ import android.widget.Toast;
 import cn.eoe.app.R;
 import cn.eoe.app.utils.LogUtil;
 
-import com.umeng.analytics.MobclickAgent;
+//import com.umeng.analytics.MobclickAgent;
 
 public class BaseActivity extends Activity {
 
@@ -33,7 +33,7 @@ public class BaseActivity extends Activity {
 				+ " onCreate() invoked!!");
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		MobclickAgent.onError(this);
+//		MobclickAgent.onError(this);
 
 	}
 
@@ -55,18 +55,18 @@ public class BaseActivity extends Activity {
 		LogUtil.d(TAG, this.getClass().getSimpleName()
 				+ " onResume() invoked!!");
 		super.onResume();
-		MobclickAgent.onResume(this);
+//		MobclickAgent.onResume(this);
 	}
 
 	@Override
 	protected void onPause() {
 		LogUtil.d(TAG, this.getClass().getSimpleName() + " onPause() invoked!!");
 		super.onPause();
-		try {
-			MobclickAgent.onPause(this);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		try {
+//			MobclickAgent.onPause(this);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	@Override

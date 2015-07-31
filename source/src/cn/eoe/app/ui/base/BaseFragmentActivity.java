@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Window;
 import cn.eoe.app.R;
 
-import com.umeng.analytics.MobclickAgent;
 /**
  * 拓展FragmentActivity的功能
  * 1、添加了全屏特性
@@ -23,21 +22,21 @@ public class BaseFragmentActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 //		设置全屏
 		requestWindowFeature(Window.FEATURE_NO_TITLE); 
-		MobclickAgent.onError(this);
+//		MobclickAgent.onError(this);
 	}
 
 	@Override
 	protected void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
-		MobclickAgent.onPause(this);
+//		MobclickAgent.onPause(this);
 	}
 
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		MobclickAgent.onResume(this);
+//		MobclickAgent.onResume(this);
 	}
 	
 	public void finish() {

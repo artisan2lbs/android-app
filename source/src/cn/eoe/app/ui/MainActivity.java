@@ -61,8 +61,6 @@ import cn.eoe.app.utils.IntentUtil;
 import cn.eoe.app.utils.PopupWindowUtil;
 import cn.eoe.app.widget.CustomButton;
 
-import com.umeng.fb.FeedbackAgent;
-
 /**
  * 
  * @author DistantSaviour
@@ -368,10 +366,10 @@ public class MainActivity extends BaseSlidingFragmentActivity implements
                             Toast.LENGTH_LONG).show();
                 }
                 break;
-            case R.id.cbFeedback:
+          /*  case R.id.cbFeedback:
                 FeedbackAgent agent = new FeedbackAgent(this);
                 agent.startFeedbackActivity();
-                break;
+                break;*/
             case R.id.cbAbove:
                 IntentUtil.start_activity(this, AboutActivity.class);
                 break;
